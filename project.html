@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            text-decoration: none;
+            list-style: none;
+            box-sizing: border-box;
+        }
+        .head {
+            background-color: black;
+            color: white;
+            padding:10px;
+             display: flex;
+            justify-content: space-around;
+        }
+        .head .logo{
+            display: flex;
+            align-items: center;
+        }
+        .head .logo img{
+            height: 40px;
+            margin-right: 10px;
+        }
+        .head .logo h1{
+            color: #d4a373;
+            font-size: 28px;
+            font-weight: bold;
+           
+        }
+
+        nav  {
+          display: flex;
+        
+        
+
+         
+          
+        }
+     ul{
+           list-style-type: none;
+           display: flex;
+           align-items: center;
+           column-gap: 50px;
+          
+          
+          }
+
+    .links:hover{
+        color: #d4a373;
+       align-items: center;
+
+    }
+    
+    .container {
+        background-color: #282726;
+       text-align: center;
+   }
+
+
+.lights {
+    display: flex;
+   
+    justify-content: center;
+    gap: 50px;
+}
+
+
+h1 {
+    font-size: 3em;
+    color: white;
+    font-style: italic;
+   
+}
+
+h2 {
+    font-size: 3em;
+    margin: 10px ;
+   
+}
+
+p {
+    margin: auto;
+    max-width: 600px;
+    line-height: 1.6;
+    
+}
+
+button {
+   
+    background-color: #5a473a;
+    border:1px solid#d4a373;
+    color: #fff;
+    border-radius: 10px;
+    margin: 20px 20px 20px 20px;
+    padding: 15px;
+   width: 100px;
+   height: 50px;
+   
+}
+
+button:hover {
+    background-color:#d4a373;
+}
+
+.counter {
+   
+    height: 50px;
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.items {
+    
+    display: flex;
+     justify-content: center;
+    align-items: center;
+    gap: 20px;
+} 
+
+.items img {
+  
+    height: 100%;
+    width: 100%;
+    
+}
+.coffee {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 20px;
+    background-color: #f5f5f5;
+}
+
+.content {
+    max-width: 60%;
+    margin-top: 200px;
+    margin-left: 200px;
+    
+
+}
+
+h3 {
+    font-size: 2em;
+    color: #d8a659;
+   
+   
+}
+
+h2 {
+    font-size: 2.5em;
+    margin: 10px 0;
+    color: #333;
+   
+}
+
+p {
+    font-size: 1em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #282726;
+    
+}
+
+a {
+    color: #d8a659;
+    text-decoration: none;
+}
+.image {
+    max-width: 30%;
+   text-align: right;
+   margin-right: 450px;
+    
+}
+
+.image img {
+    width: 100%;
+    border:10px solid white;
+    border-radius: 50%;
+    
+}
+body{
+    background-color: #f5f5f5;
+}
+.card-container{
+    display:inline-block;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+  margin-right: 20px;
+  margin-left: 100px;
+  
+   
+  
+   
+}
+ .card{
+   
+    width: 288px;
+    border-radius: 5px;
+    position: relative;
+    left: 100px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px -1px rgba(0,0,0,0.5);
+   transition: all 1.1s;
+   
+} 
+.card:hover{
+    transform: scale(1.2);
+}
+
+.card img{
+    width:100%;
+    height: auto
+  
+}
+
+.card-content h1{
+    color: #333;
+    font-size: 28px;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    text-decoration: underline;
+   
+}
+ .card-content h1:hover{
+     color: #d8a659;
+} 
+.card-content p{
+    color: #282726;
+    font-size: 15px;
+    line-height: 1.3;
+}
+.card-content .btn{
+display: inline-block;
+padding: 8px 16px;
+background-color: #333;
+text-decoration: none;
+border-radius: 50%;
+margin-top: 10px;
+}
+.card-content .btn:hover{
+    color:white ;
+}
+.popular .image{
+    display: flex;
+            align-items: center;
+            margin-left:200px;
+            margin-top: 70px;
+        }
+        .popular .image img{
+            height: 40px;
+            width: 40px;
+            border: none;
+           margin-right: 10px;
+           
+        }
+        .popular .image h3{
+            color:#d8a659;
+            font-size: 28px;
+            font-weight: bold;
+            
+           
+        }
+        .gallery {
+    display: flex;
+    gap: 20px;
+    
+}
+
+.gallery-item {
+    position: relative;
+    background-color: #fff;
+    border: 5px solid white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-item img {
+    width: 100%;
+  display: block;
+}
+
+.text-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: left;
+}
+
+
+
+.gallery-item p {
+    margin:5px;
+}
+
+.gallery-item.large {
+    width: 50%;
+   
+    margin-left: 15%;
+    
+}
+
+.gallery-column {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.gallery-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.gallery-item.small {
+    width: 100%;
+}
+.daily {
+    display: flex;
+    align-items: flex-start;
+    padding: 20px;
+    max-width: 800px;
+    margin-top: 50px;
+    margin-left:150px;
+  
+}
+
+.daily img {
+    width: 350px;
+    height: auto;
+  
+    
+}
+
+.text-menu  {
+    width: 400px;
+    margin-left: 150px;
+}
+
+.text-menu p{
+  font-size: 14px;
+  color: black;
+}
+.text-line li {
+    font-size: 14px;
+    color: black;
+    line-height: 1;
+    margin-bottom: 10px;
+}
+
+button {
+    display: flex;
+    justify-content: center;
+    margin-left: 45%;
+  
+ 
+}
+
+button:hover {
+    
+    color: white;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+
+.footer-container {
+    display: flex;
+   
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-section {
+    flex: 1;
+    padding: 10px;
+    display: inline-block;
+    flex-direction: column;
+   
+}
+
+.footer-section h3 {
+    margin-bottom: 15px;
+   font-size: 20px;
+    text-transform: uppercase;
+   
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    margin-right: 65%
+   
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li  {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-section ul li:hover {
+   color: #d8a659;
+}
+.foot{
+    margin-top: 25px;
+    font-size:2;
+    text-align: center;
+}
+.foot span{
+text-decoration:none;
+}
+@media (max-width: 768px) {
+    .head {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+    .head .logo img {
+        height: 30px;
+        margin-right: 0;
+    }
+    .head .logo h1 {
+        font-size: 24px;
+        text-align: center;
+    }
+    nav ul {
+        flex-direction: column;
+        row-gap: 20px;
+    }
+    .container h1 {
+        font-size: 2em;
+    }
+    .container h2 {
+        font-size: 2.5em;
+    }
+    .container p {
+        padding: 0 20px;
+    }
+    .coffee {
+        flex-direction: column;
+        text-align: center;
+    }
+    .content, .image {
+        max-width: 100%;
+        margin: 0;
+        padding: 20px;
+    }
+    .card-container {
+        margin-left: 0;
+        margin-right: 0;
+        text-align: center;
+    }
+    .card {
+        margin: 0 auto;
+        left: 0;
+    }
+    .gallery {
+        flex-direction: column;
+    }
+    .gallery-item.large {
+        width: 100%;
+        margin-left: 0;
+    }
+    .gallery-item.small {
+        width: 100%;
+    }
+    .daily {
+        flex-direction: column;
+        text-align: center;
+    }
+    .text-menu {
+        margin-left: 0;
+    }
+    button {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+
+
+    
+
+    </style>
+</head>
+<body>
+    <header class="head">
+        <div class="logo">
+        <img src="https://templatemo.com/templates/templatemo_466_cafe_house/img/logo.png">
+        <h1>Cafe House</h1>
+        </div>
+        
+    <nav>
+    <img src="https://templatemo.com/templates/templatemo_466_cafe_house/img/logo.png" height="60px" width="30px">
+    <ul class="links">
+    <li style="color: #d4a373;">HOME</li>
+    <li>TODAY SPECIAL</li>
+    <li>MENU</li>
+    <li>CONTACT</li>
+    </ul>
+  </nav>
+  </header>
+   
+  <div class="container">
+   
+    <div class="lights"></div>
+    <img src="https://templatemo.com/templates/templatemo_466_cafe_house/img/light.png" alt="">
+    <img src="https://templatemo.com/templates/templatemo_466_cafe_house/img/light.png" alt="">
+    <img src="https://templatemo.com/templates/templatemo_466_cafe_house/img/light.png" alt="">
+        <h1>Welcome To</h1>
+        <h2 style="color: #d8a659;">CAFE HOUSE</h2>
+        <p style="color: #ccc;">
+            Cafe House template is a mobile-friendly responsive Bootstrap v3.3.5 layout by templatem. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, 
+            pellentesque eu, pretium quis, sem.
+        </p>
+        <button style="color: #d8a659;">Details</button>
+    </div>
+  
+    <div class="counter">
+        
+            <img src="https://templatemo.com/templates/templatemo_466_cafe_house/img/table-set.png" >
+        
+    </div>
+    <div class="coffee">
+        <div class="content">
+            <h3>The Best Coffee for You</h3>
+            <h2>Cafe House</h2>
+            <p>
+                This is a free HTML5 website template from <a href="#">templatemo</a>. Fndimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum.
+                Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus.
+                Donec vitae sapien ut libero venenatis faucibus. Etiam sit amet orci eget eros faucibus tincidunt.
+            </p>
+            <button style="color: #d8a659;">READ MORE</button>
+        </div>
+        <div class="image">
+            <img src="https://templatemo.com/templates/templatemo_466_cafe_house/img/1.jpg">
+        </div> 
+    </div>
+    
+    <div class="popular">
+        <div class="image">
+        <img src="https://templatemo.com/templates/templatemo_466_cafe_house/img/logo.png">
+        <h3>Popular Items</h3>
+        </div>
+   
+   
+    
+   <div class="card-container">
+   
+    <div class="card">
+        
+            
+        <img src="https://templatemo.com/templates/templatemo_466_cafe_house/img/popular-1.jpg">
+        <div class="card-content">
+            <h1>americano</h1>
+            <p>Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque. sed ipsum.</p>
+            <a href=""class="btn">Order Now</a>
+      </div>
+    </div>
+   </div>
+   <div class="card-container">
+    <div class="card">
+        <img src="https://templatemo.com/templates/templatemo_466_cafe_house/img/popular-2.jpg">
+        <div class="card-content">
+            <h1>cappuccino</h1>
+            <p>Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque. sed ipsum.</p>
+            <a href=""class="btn">Order Now</a>
+      </div>
+    </div>
+   </div>
+   <div class="card-container">
+    <div class="card">
+        <img src="https://templatemo.com/templates/templatemo_466_cafe_house/img/popular-3.jpg">
+        <div class="card-content">
+            <h1>mocha</h1>
+            <p>Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque. sed ipsum.</p>
+            <a href=""class="btn">Order Now</a>
+      </div>
+    </div>
+   </div>
+</div>
+<div class="popular">
+    <div class="image">
+    <img src="https://templatemo.com/templates/templatemo_466_cafe_house/img/logo.png">
+    <h3>Today's Special</h3>
+    </div>
+</div>
+<div class="gallery">
+    <div class="gallery-item large">
+        <img src="https://templatemo.com/templates/templatemo_466_cafe_house/img/special-1.jpg" alt="Image 1">
+        <div class="text-overlay">
+            <h2 style="color: white;">Donec pede justo</h2>
+            <p style="color: white;">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+        </div>
+    </div>
+    <div class="gallery-column">
+        <div class="gallery-item small">
+            <img src="https://templatemo.com/templates/templatemo_466_cafe_house/img/special-2.jpg" alt="Image 2">
+            <div class="text-overlay">
+                <h2 style="color: white;">Etiam sit amet</h2>
+                <p style="color: white;">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+            </div>
+        </div>
+        <div class="gallery-row">
+            <div class="gallery-item small">
+                <img src="https://templatemo.com/templates/templatemo_466_cafe_house/img/special-3.jpg" alt="Image 3">
+                <div class="text-overlay">
+                    <h4 style="color: white;">Vivamus elementum</h4>
+                </div>
+            </div>
+            <div class="gallery-item small">
+                <img src="https://templatemo.com/templates/templatemo_466_cafe_house/img/special-4.jpg" alt="Image 4">
+                <div class="text-overlay">
+                    <h4 style="color: white;">Quisque rutrum</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="popular">
+    <div class="image">
+    <img src="https://templatemo.com/templates/templatemo_466_cafe_house/img/logo.png">
+    <h3>Daily Menu</h3>
+    </div>
+</div>
+<div class="daily">
+<img src="https://templatemo.com/templates/templatemo_466_cafe_house/img/menu-board.png" alt="">
+<div class="text-menu">
+    <p>Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus.</p>
+    <ol class="text-line">
+        <li>Tellus eget condimentum rhoncus.</li>
+        <li> Sem quam semper libero.</li>
+        <li>Sit amet adipiscing sem neque sed ipsum.</li>
+        <li>Nam quam nunc, blandit vel, luctus pulvinar.</li>
+        <li>Maecenas nec odio et ante tincidunt tempus.</li>
+       <li>Donec vitae sapien ut libero ventenatis faucibus.</li>
+        
+    </ol>
+    <button style="color: #d8a659;">READ MORE</button>  
+</div>
+
+</div>
+<footer>
+    <div class="footer-container">
+        <div class="footer-section">
+            <h3>Main Menu</h3>
+            <ul>
+                <li>Home</li>
+                <li>About us</li>
+                <li>Directory</li>
+                <li>Blog</li>
+                <li>Our Services</li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>About Us</h3>
+            <p style="color: white;">Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet.</p>
+
+               <p style="color: white;"> Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus.</p>
+        </div>
+        <div class="footer-section">
+            <h3>Get Social</h3>
+            <P style="color: white;">Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante.</P>
+            <ul>
+        
+                <li ><img src="https://cdn-icons-png.flaticon.com/128/2168/2168281.png" width="25%"></li>
+                <li><img src="https://cdn-icons-png.flaticon.com/128/3670/3670151.png" width="25%"></li>
+                <li><img src="https://cdn-icons-png.flaticon.com/128/1384/1384014.png" width="25%" ></li>
+                <li><img src="https://cdn-icons-png.flaticon.com/128/1384/1384012.png" width="25%"></li>
+            </ul>
+        </div>
+    </div>
+    
+</footer>
+<div class="foot">
+    <p>Copyright © 2084 Your Cafe House. Design:<span style="color:#337ab7;"> template mo</span></p>
+    </div>
+
+
+</body>
+</html>
